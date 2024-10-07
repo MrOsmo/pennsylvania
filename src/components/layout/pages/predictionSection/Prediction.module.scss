@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.prediction {
+  margin-top: 150px;
+
+  .container {
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      h1 {
+        color: rgb(226, 222, 222);
+        font-weight: 500;
+        font-family: "Anton", sans-serif;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+      }
+
+      .description {
+        margin-inline: 50px;
+
+        p {
+          text-align: center;
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-size: 18px;
+          letter-spacing: 1px;
+          margin-top: 10px;
+        }
+      }
+
+      .candidates {
+        display: flex;
+        justify-content: start;
+        align-self: center;
+        margin-top: 50px;
+        margin-right: 1080px;
+
+        @media (max-width: "1416px") {
+          align-self: start;
+          margin-right: 0;
+          margin-inline: 35px;
+        }
+
+        //HARRIS IS ACTIVE
+
+        .harris_active {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          cursor: default;
+          background-color: rgb(255, 255, 255);
+          padding: 3px 35px;
+          border-radius: 9px 0 0 9px;
+
+
+          .active {
+            font-weight: 600;
+            font-size: 22px;
+            color: rgb(49, 49, 50);
+          }
+        }
+
+        //HARRIS IS NOT ACTIVE
+
+        .harris_not {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          cursor: pointer;
+          background-color: rgba(195, 190, 190, 0.226);
+          padding: 3px 35px;
+          border-radius: 9px 0 0 9px;
+
+
+          .active {
+            font-weight: 400;
+            font-size: 22px;
+            color: rgb(180, 179, 179);
+          }
+        }
+
+        //TRUMP IS ACTIVE
+
+
+        .trump_active {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          cursor: default;
+          background-color: rgb(255, 255, 255);
+          padding: 3px 35px;
+          border-radius: 0 9px 9px 0;
+
+          .active {
+            font-weight: 600;
+            font-size: 22px;
+            color: rgb(49, 49, 50);
+          }
+        }
+
+        //TRUMP IS NOT ACTIVE
+
+        .trump_not {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          cursor: pointer;
+          background-color: rgba(195, 190, 190, 0.226);
+          padding: 3px 35px;
+          border-radius: 0 9px 9px 0;
+
+          .active {
+            font-weight: 400;
+            font-size: 22px;
+            color: rgb(180, 179, 179);
+          }
+        }
+      }
+
+      .candidates_about {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        max-width: 1400px;
+        margin-top: 25px;
+        padding-inline: 27px;
+
+
+        .sides {
+          display: flex;
+          justify-content: start;
+          align-items: start;
+          width: 100%;
+          padding: 20px 25px;
+          border: 2px solid rgb(186, 177, 177);
+          border-radius: 7px;
+
+          @media (max-width: "946px") {
+            padding: 10px;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            height: 835px;
+          }
+
+          @media (max-width: "700px") {
+            height: auto;
+          }
+
+          .left {
+            img {
+              width: 100%;
+              max-width: 500px;
+              border: 2px solid white;
+              border-radius: 15px;
+              box-shadow: 7px 6px black;
+
+              @media (max-width: "946px") {
+                max-width: 300px;
+                margin-top: 20px;
+              }
+            }
+          }
+
+          .right {
+            width: 100%;
+
+            .right_nav {
+              display: flex;
+              justify-content: start;
+              align-items: start;
+              margin-inline: 25px;
+
+              @media (max-width: "946px") {
+                justify-content: center;
+                align-items: center;
+                margin-top: 25px;
+              }
+
+              .general {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: default;
+
+                h2 {
+                  font-size: 20px;
+                  font-weight: 500;
+
+                  @media (max-width: "700px") {
+                    font-size: 16px;
+                  }
+                }
+
+                .line {
+                  width: 150px;
+                  border: 1px solid white;
+                  margin-top: 5px;
+
+                  @media (max-width: "700px") {
+                    width: 90px;
+                  }
+                }
+              }
+
+              .not_general {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+
+                h2 {
+                  color: grey;
+                  font-size: 20px;
+                  font-weight: 400;
+
+                  @media (max-width: "700px") {
+                    font-size: 16px;
+                  }
+                }
+
+                .line {
+                  width: 150px;
+                  border: 1px solid rgb(162, 160, 160);
+                  margin-top: 5px;
+
+                  @media (max-width: "700px") {
+                    width: 90px;
+                  }
+                }
+              }
+
+              .history {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: default;
+
+                h2 {
+                  font-size: 20px;
+                  font-weight: 500;
+
+                  @media (max-width: "700px") {
+                    font-size: 16px;
+                  }
+                }
+
+                .line {
+                  width: 150px;
+                  border: 1px solid white;
+                  margin-top: 5px;
+
+                  @media (max-width: "700px") {
+                    width: 90px;
+                  }
+                }
+              }
+
+              .not_history {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+
+                h2 {
+                  color: grey;
+                  font-size: 20px;
+                  font-weight: 400;
+
+                  @media (max-width: "700px") {
+                    font-size: 16px;
+                  }
+                }
+
+                .line {
+                  width: 150px;
+                  border: 1px solid rgb(162, 160, 160);
+                  margin-top: 5px;
+
+                  @media (max-width: "700px") {
+                    width: 90px;
+                  }
+                }
+              }
+
+              .opinion {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: default;
+
+                h2 {
+                  font-size: 20px;
+                  font-weight: 500;
+
+                  @media (max-width: "700px") {
+                    font-size: 16px;
+                  }
+                }
+
+                .line {
+                  width: 150px;
+                  border: 1px solid white;
+                  margin-top: 5px;
+
+                  @media (max-width: "700px") {
+                    width: 90px;
+                  }
+                }
+              }
+
+              .not_opinion {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+
+                h2 {
+                  color: grey;
+                  font-size: 20px;
+                  font-weight: 400;
+
+                  @media (max-width: "700px") {
+                    font-size: 16px;
+                  }
+                }
+
+                .line {
+                  width: 150px;
+                  border: 1px solid rgb(162, 160, 160);
+                  margin-top: 5px;
+
+                  @media (max-width: "700px") {
+                    width: 90px;
+                  }
+                }
+              }
+            }
+
+            .personal_details {
+              display: flex;
+              gap: 15px;
+              flex-direction: column;
+              margin-top: 35px;
+              margin-inline: 25px;
+
+              h2 {
+                color: rgb(147, 144, 144);
+                font-size: 19px;
+                font-weight: 400;
+
+                @media (max-width: "1392px") {
+                  font-size: 16.5px;
+                }
+
+                span {
+                  font-weight: 400;
+                  color: #ffffff;
+                }
+              }
+
+              .line {
+                width: 100%;
+                border: 0.5px solid rgba(255, 255, 255, 0.237);
+              }
+            }
+
+            .history_details {
+              margin-inline: 25px;
+              margin-top: 25px;
+
+              p {
+                font-size: 20px;
+                line-height: 33px;
+              }
+            }
+
+            .opinion_details {
+              margin-inline: 25px;
+              margin-top: 25px;
+
+              p {
+                font-size: 20px;
+                line-height: 33px;
+              }
+            }
+          }
+        }
+      }
+
+      .reference_div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+
+
+        @media (max-width: "684px") {
+          margin-right: 0px;
+        }
+
+        .border {
+          display: flex;
+          align-self: start;
+          border: 1px solid white;
+          width: 100%;
+          margin-inline: 30px;
+          max-width: 450px;
+          margin-top: 20px;
+          @media (max-width: "541px") {
+            max-width: 300px;
+          }
+        }
+
+        .references {
+          display: flex;
+          justify-content: start;
+          align-self: start;
+          gap: 10px;
+          color: white;
+          padding-inline: 30px;
+          margin-top: 10px;
+          font-size: 15px;
+          font-weight: 600;
+          letter-spacing: 1px;
+
+          a {
+            color: rgb(150, 150, 220);
+          }
+
+          @media (max-width: "604px") {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}

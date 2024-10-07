@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.special_features {
+  margin-top: 150px;
+
+  .container {
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      h1 {
+        color: rgb(226, 222, 222);
+        font-weight: 500;
+        font-family: "Anton", sans-serif;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+      }
+
+      .description {
+        margin-inline: 50px;
+
+        p {
+          text-align: center;
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-size: 18px;
+          letter-spacing: 1px;
+          margin-top: 10px;
+        }
+      }
+
+      .table {
+        width: 100%;
+
+        .candidates_row {
+          display: flex;
+          margin-inline: 55px;
+          margin-top: 55px;
+          border: 2px solid white;
+          border-left: 0;
+          border-right: 0;
+          border-top: 0;
+
+          @media (max-width: "500px") {
+            margin-inline: 20px;
+          }
+
+          .trump {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 50%;
+            margin-bottom: 10px;
+            font-style: italic;
+
+          }
+
+          .harris {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 50%;
+            margin-bottom: 10px;
+            font-style: italic;
+          }
+        }
+
+        .sides {
+          display: flex;
+          margin-inline: 55px;
+
+          @media (max-width: "978px") {
+            margin-inline: 35px;
+          }
+
+          @media (max-width: "500px") {
+            margin-inline: 0px;
+          }
+
+
+          .left {
+            width: 100%;
+            max-width: 50%;
+            margin-top: 30px;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 50px;
+
+              @media (max-width: "978px") {
+                gap: 20px;
+              }
+
+              li {
+                line-height: 30px;
+                font-size: 22px;
+
+                @media (max-width: "960px") {
+                  font-size: 19px;
+                }
+
+                @media (max-width: "566px") {
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+
+          .middle_line {
+            height: 500px;
+            border: 1px solid white;
+
+            @media (max-width: "1505px") {
+              height: auto;
+            }
+
+            @media (max-width: "960px") {
+              margin: 0 10px 0 15px;
+            }
+            @media (max-width: "500px") {
+              margin: 0 0px 0 5px;
+            }
+          }
+
+          .right {
+            width: 100%;
+            max-width: 50%;
+            margin-top: 30px;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              gap: 50px;
+
+              @media (max-width: "978px") {
+                gap: 20px;
+              }
+
+              li {
+                font-size: 22px;
+                line-height: 30px;
+
+                @media (max-width: "960px") {
+                  font-size: 19px;
+                }
+
+                @media (max-width: "566px") {
+                  font-size: 17px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .reference_div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+
+
+        @media (max-width: "684px") {
+          margin-right: 0px;
+        }
+
+        .border {
+          display: flex;
+          align-self: start;
+          border: 1px solid white;
+          width: 100%;
+          margin-inline: 30px;
+          max-width: 200px;
+          margin-top: 20px;
+        }
+
+        .references {
+          display: flex;
+          justify-content: start;
+          align-self: start;
+          gap: 10px;
+          color: white;
+          padding-inline: 30px;
+          margin-top: 10px;
+          font-size: 15px;
+          font-weight: 600;
+          letter-spacing: 1px;
+
+          a {
+            color: rgb(150, 150, 220);
+          }
+
+          @media (max-width: "604px") {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}
