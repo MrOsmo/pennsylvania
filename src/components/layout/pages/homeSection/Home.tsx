@@ -23,6 +23,15 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className={scss.reference_div}>
+            <div className={scss.border}></div>
+            <p className={scss.references}>
+              References:
+              <a target="_blank" href="https://pixabay.com/de/vectors/pennsylvania-zustand-siegel-norden-40430">Seal (in Header)</a>
+              |
+              <a target="_blank" href="">Trump & Harris</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>

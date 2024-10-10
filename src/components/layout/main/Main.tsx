@@ -11,12 +11,12 @@ const Main = () => {
   return (
     <main className={scss.main}>
       <Home />
-      <Fact/>
-      <Prediction/>
-      <History/>
-      <Material/>
-      <SpecialFeatures/>
-      <OtherProject/>
+      <Prediction />
+      <Fact />
+      <History />
+      <Material />
+      <SpecialFeatures />
+      <OtherProject />
     </main>
   )
 }

@@ -6,6 +6,7 @@
   @media (max-width: "1060px") {
     margin-inline: 20px;
   }
+
   @media (max-width: "1211px") {
     margin-bottom: 0;
   }
@@ -156,6 +157,53 @@
             @media (max-width: "404px") {
               width: 300px;
             }
+          }
+        }
+      }
+
+      .reference_div {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+
+
+        @media (max-width: "684px") {
+          margin-right: 0px;
+        }
+
+        .border {
+          display: flex;
+          align-self: start;
+          border: 1px solid white;
+          width: 100%;
+          max-width: 450px;
+          margin-top: 20px;
+
+          @media (max-width: "541px") {
+            max-width: 300px;
+          }
+        }
+
+        .references {
+          display: flex;
+          justify-content: start;
+          align-self: start;
+          gap: 10px;
+          color: white;
+          margin-top: 10px;
+          font-size: 15px;
+          font-weight: 600;
+          letter-spacing: 1px;
+
+          a {
+            color: rgb(150, 150, 220);
+          }
+
+          @media (max-width: "604px") {
+            flex-wrap: wrap;
           }
         }
       }

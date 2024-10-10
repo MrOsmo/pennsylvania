@@ -2,7 +2,7 @@ import scss from "./Fact.module.scss"
 import img1 from "../../../../assets/cards/img1.jpg"
 import img2 from "../../../../assets/cards/img2.jpg"
 import img3 from "../../../../assets/cards/img3.jpg"
-import img4 from "../../../../assets/cards/img4.webp"
+import img4 from "../../../../assets/cards/img4.jpg"
 import img5 from "../../../../assets/cards/img5.jpg"
 import img6 from "../../../../assets/cards/img6.jpg"
 
@@ -64,6 +64,18 @@ const Fact = () => {
                 <a target="_blank" href="https://www.teachaboutus.org/pluginfile.php/47354/mod_book/chapter/5775/All%202024%20State%20Fact%20Sheets.zip?time=1719314826507">Facts</a>
                 |
                 <a target="_blank" href="https://kids.nationalgeographic.com/geography/states/article/pennsylvania">Facts (Part 2)</a>
+                |
+                <a target="_blank" href="https://pixabay.com/de/photos/philadelphia-wolkenkratzer-horizont-4643451/">General (Picture)</a>
+                |
+                <a target="_blank" href="https://pixabay.com/de/illustrations/abstimmung-wahlurne-9015721/">Voting (Picture)</a>
+                |
+                <a target="_blank" href="https://pixabay.com/de/photos/gettysburg-pennsylvania-schlachtfeld-4663383">Factors (Picture)</a>
+                |
+                <a target="_blank" href="https://www.pexels.com/de-de/foto/willkommen-bei-unserem-home-print-brown-wooden-wall-decor-163046/">Name (Picture)</a>
+                |
+                <a target="_blank" href="https://pixabay.com/de/photos/milan-royal-auvergne-vogel-stift-5217346/">Wildlife (Picture)</a>
+                |
+                <a target="_blank" href="https://www.pexels.com/de-de/foto/schwarzes-textil-41949/">Geography (Picture)</a>
               </p>
             </div>
           </div>

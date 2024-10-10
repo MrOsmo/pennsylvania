@@ -2,6 +2,7 @@
 
 .fact {
   width: 100%;
+  margin-top: 150px;
 
   .container {
     .background {
@@ -94,17 +95,10 @@
         .reference_div {
           display: flex;
           justify-content: flex-start;
-          align-items: center;
+          align-items: start;
           flex-direction: column;
-          margin-right: 650px;
           width: 100%;
-
-          @media (max-width: "1014px") {
-            margin-right: 340px;
-          }
-          @media (max-width: "684px") {
-            margin-right: 0px;
-          }
+          margin-top: 25px;
     
           .border {
             display: flex;
@@ -112,15 +106,28 @@
             justify-content: start;
             border: 1px solid white;
             width: 100%;
-            margin-right: 85px;
-            max-width: 200px;
+            margin-inline: 30px;
+            max-width: 750px;
             margin-top: 20px;
+            @media (max-width: "1001px") {
+              max-width: 500px;
+            }
+            @media (max-width: "616px") {
+              max-width: 400px;
+            }
+            @media (max-width: "541px") {
+              max-width: 300px;
+            }
+            @media (max-width: "386px") {
+              max-width: 250px;
+            }
           }
 
           .references {
             display: flex;
             align-items: start;
             justify-content: start;
+            flex-wrap: wrap;
             gap: 10px;
             color: white;
             padding-inline: 30px;

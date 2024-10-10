@@ -1,6 +1,6 @@
 import scss from "./History.module.scss"
 import electionHistoryGraph from "../../../../assets/election_history.jpg"
-import trumpAndHarrisImage from "../../../../assets/background1.jpg"
+import trumpAndHarrisImage from "../../../../assets/graphics.jpg"
 
 const History = () => {
   return (
@@ -46,7 +46,7 @@ const History = () => {
                 |
                 <a target="_blank" href="https://www.teachaboutus.org/pluginfile.php/47354/mod_book/chapter/5775/All%202024%20State%20Fact%20Sheets.zip?time=1719314826507">Graph</a>
                 |
-                <a target="_blank" href="https://cms.frol.us/wgbh/frontline/wp-content/uploads/2024/09/choice-2024_key-art_candidates_CLEAN.jpg">Harris & Trump (Picture)</a>
+                <a target="_blank" href="https://www.pexels.com/de-de/foto/kollegen-die-sich-das-umfrageblatt-ansehen-3183153/">Results (Picture)</a>
               </p>
             </div>
         </div>

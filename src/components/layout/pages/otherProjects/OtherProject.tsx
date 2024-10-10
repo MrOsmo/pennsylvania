@@ -80,14 +80,8 @@ const OtherProject = () => {
       name: "Neele"
     },
     {
-      name: "Jannis"
-    },
-    {
       name: "Samira"
-    },
-    {
-      name: "Silas"
-    },
+    }
   ]
   return (
     <section className={scss.other_projects}>
@@ -112,7 +106,7 @@ const OtherProject = () => {
 
                 <div className={scss.right}>
                   <img src={songBackground} alt="SongBackground" />
-                  <audio muted loop controls src={testAudio}></audio>
+                  <audio loop controls src={testAudio}></audio>
                 </div>
 
               </div>
@@ -166,7 +160,7 @@ const OtherProject = () => {
                 </div>
 
                 <div className={scss.left}>
-                  <h2>Video 🎥</h2>
+                  <h2>Podcast 🎙️</h2>
                   <div className={scss.names}>
                     {groupFour.map((e, index) => (
                       <p key={index}>{e.name}</p>

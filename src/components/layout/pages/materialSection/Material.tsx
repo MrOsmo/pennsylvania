@@ -13,13 +13,13 @@ const Material = () => {
 
           <video src={test} controls></video>
 
-          <div className={scss.reference_div}>
+          {/* <div className={scss.reference_div}>
             <div className={scss.border}></div>
             <p className={scss.references}>
               References:
               <a target="_blank" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ">Video</a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

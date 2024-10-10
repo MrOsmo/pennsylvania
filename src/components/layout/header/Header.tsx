@@ -11,11 +11,11 @@ const Header = () => {
       line: "-"
     },
     {
-      heading: "Facts",
+      heading: "Prediction",
       line: "-"
     },
     {
-      heading: "Prediction",
+      heading: "Facts",
       line: "-"
     },
     {
