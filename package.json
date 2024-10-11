@@ -15,9 +15,9 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.2",
     "@mui/material": "^6.1.2",
+    "pensylvania": "link:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-player": "^2.16.0",
     "sass": "^1.79.4"
   },
   "devDependencies": {

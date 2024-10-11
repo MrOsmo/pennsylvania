@@ -1,88 +1,8 @@
 import scss from "./OtherProject.module.scss"
-import testAudio from "../../../../assets/video/testAudio.mp3"
 import testVideo from "../../../../assets/video/testVideo.mp4"
-import songBackground from "../../../../assets/song.avif"
+import songVideo from "../../../../assets/projects/song.mp4"
 
 const OtherProject = () => {
-  const groupOne = [
-    {
-      name: "Kadir"
-    },
-    {
-      name: "Pauline"
-    },
-    {
-      name: "Luna"
-    },
-    {
-      name: "Johannes"
-    },
-    {
-      name: "Benjamin"
-    },
-    {
-      name: "Sofia"
-    },
-    {
-      name: "Lennox"
-    },
-    {
-      name: "Jan"
-    },
-    {
-      name: "Merle"
-    },
-  ]
-
-  const groupTwo = [
-    {
-      name: "Leni"
-    },
-    {
-      name: "Emilie"
-    },
-    {
-      name: "Ilka"
-    },
-    {
-      name: "Lorem"
-    },
-    {
-      name: "Lorem"
-    },
-  ]
-  const groupThree = [
-    {
-      name: "Kaija"
-    },
-    {
-      name: "Lorem"
-    },
-    {
-      name: "Lorem"
-    },
-    {
-      name: "Lorem"
-    },
-    {
-      name: "Lorem"
-    },
-    {
-      name: "Lorem"
-    },
-  ]
-
-  const groupFour = [
-    {
-      name: "Nick"
-    },
-    {
-      name: "Neele"
-    },
-    {
-      name: "Samira"
-    }
-  ]
   return (
     <section className={scss.other_projects}>
       <div className={scss.container}>
@@ -96,82 +16,38 @@ const OtherProject = () => {
             <div className={scss.card}>
               <div className={scss.sides}>
                 <div className={scss.left}>
-                  <h2>Song 🎶</h2>
-                  <div className={scss.names}>
-                    {groupOne.map((e, index) => (
-                      <p key={index}>{e.name}</p>
-                    ))}
+                  <div className={scss.head}>
+                    <h3>Group 1</h3>
+                    <h2>Pennsylvania: Song 🎶</h2>
                   </div>
+                  <p>This song is all about Pennsylvania, showing how breathtaking and unique the state is. With great melodies and powerful lyrics, it takes you on a journey through its beauty. Let the music inspire you and feel the spirit of Pennsylvania.</p>
                 </div>
 
                 <div className={scss.right}>
-                  <img src={songBackground} alt="SongBackground" />
-                  <audio loop controls src={testAudio}></audio>
+                  <video src={songVideo} controls></video>
                 </div>
-
               </div>
-              <h3>Group 1</h3>
+
+              <p className={scss.members}>© Pauline, Kadir, Johannes, Luna, Benjamin, Sofia, Jan, Lennox, Merle</p>
             </div>
 
             <div className={scss.card}>
-              <div className={scss.sides}>
-
-                <div className={scss.right}>
-                  <video controls src={testVideo}></video>
-                </div>
-
+              <div className={scss.sides_two}>
                 <div className={scss.left}>
-                  <h2>Video 🎥</h2>
-                  <div className={scss.names}>
-                    {groupTwo.map((e, index) => (
-                      <p key={index}>{e.name}</p>
-                    ))}
+                  <div className={scss.head}>
+                    <h3>Group 2</h3>
+                    <h2>🎥 Pennsylvania: Video</h2>
                   </div>
-                </div>
-              </div>
-              <h3>Group 2</h3>
-            </div>
-
-            <div className={scss.card}>
-              <div className={scss.sides}>
-
-                <div className={scss.left}>
-                  <h2>Video 🎥</h2>
-                  <div className={scss.names}>
-                    {groupThree.map((e, index) => (
-                      <p key={index}>{e.name}</p>
-                    ))}
-                  </div>
+                  <p>This video shows how beautiful and unique Pennsylvania is. With amazing visuals, it takes you on a journey through the state. Watch and be inspired by the beauty of Pennsylvania.</p>
                 </div>
 
                 <div className={scss.right}>
-                  <video controls src={testVideo}></video>
+                  <video src={testVideo} controls></video>
                 </div>
               </div>
-              <h3>Group 3</h3>
+
+              <p className={scss.members_two}>© Leni, Emilie, Leni, Ilka</p>
             </div>
-
-            <div className={scss.card}>
-              <div className={scss.sides}>
-
-
-                <div className={scss.right}>
-                  <video controls src={testVideo}></video>
-                </div>
-
-                <div className={scss.left}>
-                  <h2>Podcast 🎙️</h2>
-                  <div className={scss.names}>
-                    {groupFour.map((e, index) => (
-                      <p key={index}>{e.name}</p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <h3>Group 4</h3>
-            </div>
-
-
           </div>
         </div>
       </div>

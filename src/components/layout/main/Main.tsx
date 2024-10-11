@@ -1,3 +1,4 @@
+import About from "../pages/aboutSection/About"
 import Fact from "../pages/factsSection/Fact"
 import History from "../pages/historySection/History"
 import Home from "../pages/homeSection/Home"
@@ -17,6 +18,7 @@ const Main = () => {
       <Material />
       <SpecialFeatures />
       <OtherProject />
+      <About/>
     </main>
   )
 }

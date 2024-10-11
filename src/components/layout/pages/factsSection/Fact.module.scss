@@ -97,9 +97,12 @@
           justify-content: flex-start;
           align-items: start;
           flex-direction: column;
-          width: 100%;
           margin-top: 25px;
-    
+          width: 100%;
+          max-width: 1200px;
+          margin-inline: auto;
+          padding-inline: 20px;
+
           .border {
             display: flex;
             align-items: start;
@@ -109,15 +112,19 @@
             margin-inline: 30px;
             max-width: 750px;
             margin-top: 20px;
+
             @media (max-width: "1001px") {
               max-width: 500px;
             }
+
             @media (max-width: "616px") {
               max-width: 400px;
             }
+
             @media (max-width: "541px") {
               max-width: 300px;
             }
+
             @media (max-width: "386px") {
               max-width: 250px;
             }
