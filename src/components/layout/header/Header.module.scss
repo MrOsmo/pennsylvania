@@ -26,6 +26,8 @@
         align-items: center;
         padding-inline: 25px;
         gap: 10px;
+        color: white;
+        text-decoration: none;
         cursor: pointer;
 
         .heading {
@@ -39,6 +41,7 @@
             margin-top: 3px;
           }
         }
+
 
         img {
           width: 40px;
@@ -140,7 +143,7 @@
 
       .menu {
         position: fixed;
-        background-color: rgba(55, 51, 51, 0.927);
+        background-color: rgba(55, 51, 51, 0.945);
         z-index: 10;
         width: 100%;
         max-width: 250px;
@@ -154,9 +157,63 @@
         align-items: start;
 
         .scrollbox {
+          width: 100%;
           overflow: auto;
+
+          .scrollbox_inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 25px;
+              font-weight: 900;
+              text-transform: uppercase;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              letter-spacing: 1px;
+              margin-top: 10px;
+            }
+
+            .border {
+              margin-top: 10px;
+              margin-bottom: 10px;
+              width: 90%;
+              border: 1px solid white;
+            }
+
+            .nav_div {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: start;
+              width: 100%;
+
+              .nav {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                transition: 0.3s;
+
+                &:hover {
+                  background-color: rgba(187, 181, 181, 0.147);
+                  height: 50px;
+                  transition: 0.3s;
+                }
+
+                p {
+                  margin-inline: 10px;
+                }
+              }
+            }
+          }
         }
       }
+
       .menu_no {
         position: fixed;
         background-color: rgba(55, 51, 51, 0.927);
@@ -173,7 +230,60 @@
         align-items: start;
 
         .scrollbox {
+          width: 100%;
           overflow: auto;
+
+          .scrollbox_inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 25px;
+              font-weight: 900;
+              text-transform: uppercase;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              letter-spacing: 1px;
+              margin-top: 10px;
+            }
+
+            .border {
+              margin-top: 10px;
+              margin-bottom: 10px;
+              width: 90%;
+              border: 1px solid white;
+            }
+
+            .nav_div {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              align-items: start;
+              width: 100%;
+
+              .nav {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                transition: 0.3s;
+
+                &:hover {
+                  background-color: rgba(187, 181, 181, 0.147);
+                  height: 50px;
+                  transition: 0.3s;
+                }
+
+                p {
+                  margin-inline: 10px;
+                }
+              }
+            }
+          }
         }
       }
 

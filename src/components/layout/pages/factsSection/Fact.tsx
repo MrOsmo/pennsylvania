@@ -5,13 +5,19 @@ import img3 from "../../../../assets/cards/img3.jpg"
 import img4 from "../../../../assets/cards/img4.jpg"
 import img5 from "../../../../assets/cards/img5.jpg"
 import img6 from "../../../../assets/cards/img6.jpg"
+import React, { RefObject } from "react"
 
-const Fact = () => {
+interface FactsProps {
+  FactsRef: RefObject<any>
+}
+
+const Fact: React.FC<FactsProps> = ({ FactsRef }) => {
   return (
     <section className={scss.fact}>
       <div className={scss.container}>
         <div className={scss.background}>
           <div className={scss.content}>
+            <div ref={FactsRef} className={scss.smooth}></div>
             <h1>FACTS</h1>
             <p>Here’s what makes Pennsylvania unique - check out these fun facts!</p>
             <div className={scss.cards}>

@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react"
+import React, { RefObject, useEffect, useState } from "react"
 import scss from "./Prediction.module.scss"
 import harris from "../../../../assets/candidates/harris.jpg"
 import trump from "../../../../assets/candidates/trump.jpg"
 
-const Prediction = () => {
+interface PredictionProps {
+  PredictionsRef: RefObject<any>
+}
+
+const Prediction: React.FC<PredictionProps> = ({ PredictionsRef }) => {
   const [harrisActive, setHarrisActive] = useState(true)
 
   const [generalActive, setGeneralActive] = useState(true)
@@ -26,7 +30,8 @@ const Prediction = () => {
     <section className={scss.prediction}>
       <div className={scss.container}>
         <div className={scss.content}>
-          <h1>PREDICTIONS</h1>
+          <div ref={PredictionsRef} className={scss.smooth}></div>
+          <h1 >PREDICTIONS</h1>
           <div className={scss.description}>
             <p>Get a closer look at the 2024 election candidates — Kamala Harris and Donald Trump. Learn about their backgrounds, their history in politics, and read our opinions on who has the best chance to win this important race.</p>
           </div>

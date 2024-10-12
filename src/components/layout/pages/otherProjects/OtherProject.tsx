@@ -1,12 +1,18 @@
 import scss from "./OtherProject.module.scss"
 import testVideo from "../../../../assets/video/testVideo.mp4"
 import songVideo from "../../../../assets/projects/song.mp4"
+import React, { RefObject } from "react"
 
-const OtherProject = () => {
+interface OtherProjectsProps {
+  OtherProjectsRef: RefObject<any>
+}
+
+const OtherProject: React.FC<OtherProjectsProps> = ({ OtherProjectsRef }) => {
   return (
     <section className={scss.other_projects}>
       <div className={scss.container}>
         <div className={scss.content}>
+          <div ref={OtherProjectsRef} className={scss.smooth}></div>
           <h1>OTHER PROJECTS</h1>
           <div className={scss.description}>
             <p>An overview of the various projects from the different groups in our course, compiled in one place for inspiration and discovery.</p>

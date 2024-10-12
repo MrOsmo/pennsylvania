@@ -1,44 +1,100 @@
 import scss from "./Header.module.scss"
 import sealLogo from "../../../assets/logos/seal.png"
-import { useState } from "react"
+import { RefObject, useState } from "react"
 
-const Header = () => {
+interface HeaderProps {
+  HomeRef: RefObject<any | null>;
+  PredictionsRef: RefObject<any | null>;
+  FactsRef: RefObject<any | null>;
+  HistoryRef: RefObject<any | null>;
+  MaterialsRef: RefObject<any | null>;
+  SpecialFeaturesRef: RefObject<any | null>;
+  OtherProjectsRef: RefObject<any | null>;
+  AboutUsRef: RefObject<any | null>;
+}
+
+const Header: React.FC<HeaderProps> = ({ HomeRef, PredictionsRef, FactsRef, HistoryRef, MaterialsRef, SpecialFeaturesRef, OtherProjectsRef, AboutUsRef }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const navTags = [
     {
       heading: "Home",
-      line: "-"
+      line: "-",
+      ref: HomeRef
     },
     {
       heading: "Prediction",
-      line: "-"
+      line: "-",
+      ref: PredictionsRef
     },
     {
       heading: "Facts",
-      line: "-"
+      line: "-",
+      ref: FactsRef
     },
     {
       heading: "History",
-      line: "-"
+      line: "-",
+      ref: HistoryRef
     },
     {
       heading: "Materials",
-      line: "-"
+      line: "-",
+      ref: MaterialsRef
     },
     {
       heading: "Special Features",
-      line: "-"
+      line: "-",
+      ref: SpecialFeaturesRef
     },
     {
       heading: "Other Projects",
+      ref: OtherProjectsRef
+    },
+  ]
+
+  const miniNavTags = [
+    {
+      heading: "Home",
+      ref: HomeRef
+    },
+    {
+      heading: "Prediction",
+      ref: PredictionsRef
+    },
+    {
+      heading: "Facts",
+      ref: FactsRef
+    },
+    {
+      heading: "History",
+      ref: HistoryRef
+    },
+    {
+      heading: "Materials",
+      ref: MaterialsRef
+    },
+    {
+      heading: "Special Features",
+      ref: SpecialFeaturesRef
+    },
+    {
+      heading: "Other Projects",
+      ref: OtherProjectsRef
+    },
+    {
+      heading: "About Us",
+      ref: AboutUsRef
     },
   ]
   return (
     <header className={scss.header}>
       <div className={scss.container}>
         <div className={scss.content}>
-          <div className={scss.left}>
+          <div onClick={() => 
+            HomeRef.current.scrollIntoView({ behavior: "smooth" 
+            })}
+            className={scss.left}>
             <img src={sealLogo} alt="Pennsylvania-Seal-Logo" />
             <div className={scss.heading}>
               <p>Pennsylvania</p>
@@ -48,7 +104,9 @@ const Header = () => {
 
           <div className={scss.center}>
             {navTags.map((e, index) => (
-              <div className={scss.nav} key={index}>
+              <div onClick={() =>
+                e?.ref.current.scrollIntoView({ behavior: "smooth" })
+              } className={scss.nav} key={index}>
                 <p>{e?.heading}</p>
                 <p>{e?.line}</p>
               </div>
@@ -56,7 +114,9 @@ const Header = () => {
           </div>
 
           <div className={scss.right}>
-            <p>About Us</p>
+            <p onClick={() =>
+              AboutUsRef.current.scrollIntoView({ behavior: "smooth" })
+            }>About Us</p>
           </div>
         </div>
 
@@ -74,12 +134,18 @@ const Header = () => {
               <div className={scss.scrollbox}>
                 <div className={scss.scrollbox_inner}>
 
-                  {navTags.map((e, index) => (
-                    <div className={scss.nav} key={index}>
-                      <p>{e?.heading}</p>
-                      <p>{e?.line}</p>
-                    </div>
-                  ))}
+                  <h2>- Pennsylvania -</h2>
+                  <div className={scss.border}></div>
+
+                  <div className={scss.nav_div}>
+                    {miniNavTags.map((e, index) => (
+                      <div onClick={() =>
+                        e?.ref.current.scrollIntoView({ behavior: "smooth" })
+                      } className={scss.nav} key={index}>
+                        <p>{e?.heading}</p>
+                      </div>
+                    ))}
+                  </div>
 
                 </div>
               </div>

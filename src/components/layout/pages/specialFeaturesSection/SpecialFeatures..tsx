@@ -1,10 +1,16 @@
+import React, { RefObject } from "react"
 import scss from "./SpecialFeatures.module.scss"
 
-const SpecialFeatures = () => {
+interface SpecialFeaturesProps {
+  SpecialFeaturesRef: RefObject<any>
+}
+
+const SpecialFeatures: React.FC<SpecialFeaturesProps> = ({ SpecialFeaturesRef }) => {
   return (
     <section className={scss.special_features}>
       <div className={scss.container}>
         <div className={scss.content}>
+          <div ref={SpecialFeaturesRef} className={scss.smooth}></div>
           <h1>SPECIAL FEATURES</h1>
           <div className={scss.description}>
             <p>Learn what makes Donald Trump and Kamala Harris stand out in the 2024 election as we delve into their backgrounds, careers, goals, and key speeches that define their leadership styles and visions for America.</p>

@@ -1,5 +1,5 @@
 .history {
-  margin-top: 150px;
+  margin-top: 50px;
 
   .container {
     width: 100%;
@@ -13,6 +13,11 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
+
+      .smooth {
+        height: 100px;
+        width: 100%;
+      }
 
       h1 {
         color: rgb(226, 222, 222);

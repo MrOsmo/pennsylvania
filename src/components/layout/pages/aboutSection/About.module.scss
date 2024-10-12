@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .about {
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 70px;
+
   .container {
     .content {
       display: flex;
@@ -10,6 +11,11 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
+
+      .smooth {
+        height: 100px;
+        width: 100%;
+      }
 
       h1 {
         color: rgb(226, 222, 222);
@@ -51,12 +57,13 @@
           border-radius: 12px;
           width: 400px;
 
-          @media (max-width: "476px") {
-            width: 360px;
-          }
 
           @media (max-width: "405px") {
-            width: 320px;
+            width: 340px;
+          }
+
+          @media (max-width: "476px") {
+            width: 360px;
           }
 
 
@@ -79,13 +86,23 @@
           }
 
           h2 {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 400;
             margin-top: 12px;
+            color: rgb(227, 224, 224);
 
             @media (max-width: "476px") {
               font-size: 15px;
             }
+          }
+
+          h3 {
+            font-size: 17px;
+            margin-top: 3px;
+            margin-bottom: 2px;
+            font-weight: 300;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(182, 179, 179);
           }
 
           .border {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 .material {
-  margin-top: 150px;
+  margin-top: 50px;
 
   .container {
     .content {
@@ -10,6 +10,11 @@
       align-items: center;
       flex-direction: column;
       width: 100%;
+
+      .smooth {
+        height: 100px;
+        width: 100%;
+      }
 
       h1 {
         color: rgb(226, 222, 222);
