@@ -76,9 +76,12 @@
           }
 
 
-          svg {
+          .profile {
+            width: 100%;
+            max-width: 100px;
+            padding: 10px;
+            border-radius: 20px;
             background-color: rgb(142, 139, 139);
-            border-radius: 100%;
             border: 3px solid white;
             font-size: 100px;
           }
@@ -106,7 +109,7 @@
             }
 
             @media (max-width: "400px") {
-             text-align: center;
+              text-align: center;
             }
           }
 
@@ -131,6 +134,14 @@
             margin-top: 10px;
 
             a {
+              display: flex;
+
+              img {
+                border-radius: 20%;
+                background-color: rgba(30, 29, 29, 0.741);
+                width: 30px;
+              }
+
               svg {
                 border: none;
                 color: white;
@@ -174,10 +185,14 @@
           border: 0.5px solid white;
           width: 100%;
           margin-inline: 30px;
-          max-width: 350px;
+          max-width: 480px;
           margin-top: 20px;
 
-          @media (max-width: "485px") {
+          @media (max-width: "617px") {
+            max-width: 290px;
+          }
+
+          @media (max-width: "435px") {
             max-width: 200px;
           }
         }
@@ -186,6 +201,7 @@
           display: flex;
           justify-content: start;
           align-self: start;
+          flex-wrap: wrap;
           gap: 10px;
           color: white;
           padding-inline: 30px;
