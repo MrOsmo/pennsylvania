@@ -4,9 +4,10 @@ import { RefObject } from "react"
 
 interface HomeProps {
   HomeRef: RefObject<any>
+  PredictionsRef: RefObject<any>
 }
 
-const Home: React.FC<HomeProps> = ({ HomeRef }) => {
+const Home: React.FC<HomeProps> = ({ HomeRef, PredictionsRef }) => {
   return (
     <section className={scss.home}>
       <div className={scss.main_container}>
@@ -22,7 +23,9 @@ const Home: React.FC<HomeProps> = ({ HomeRef }) => {
 
                   <p className={scss.description}>On this website you will find the latest predictions and facts for the 2024 elections in Pennsylvania, helping you to understand what is happening in the most important  states in America.</p>
 
-                  <button>Discover</button>
+                  <button onClick={() => 
+                    PredictionsRef.current.scrollIntoView({behavior: "smooth"})
+                  }>Discover</button>
                 </div>
 
                 <div className={scss.right}>
@@ -36,9 +39,9 @@ const Home: React.FC<HomeProps> = ({ HomeRef }) => {
                 References:
                 <a target="_blank" href="https://pixabay.com/de/vectors/pennsylvania-zustand-siegel-norden-40430">Seal (in Header)</a>
                 |
-                <a target="_blank" href="https://pixabay.com/de/vectors/ai-generiert-frau-kamala-harris-9069971/">Harris</a>
+                <a target="_blank" href="https://pixabay.com/de/vectors/ai-generiert-frau-kamala-harris-9069971/">Harris (Picture)</a>
                 |
-                <a target="_blank" href="https://pixabay.com/de/vectors/ai-generiert-donald-trump-präsident-9069949/">Trump</a>
+                <a target="_blank" href="https://pixabay.com/de/vectors/ai-generiert-donald-trump-präsident-9069949/">Trump (Picture)</a>
               </p>
             </div>
           </div>

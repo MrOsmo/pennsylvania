@@ -91,8 +91,9 @@ const Header: React.FC<HeaderProps> = ({ HomeRef, PredictionsRef, FactsRef, Hist
     <header className={scss.header}>
       <div className={scss.container}>
         <div className={scss.content}>
-          <div onClick={() => 
-            HomeRef.current.scrollIntoView({ behavior: "smooth" 
+          <div onClick={() =>
+            HomeRef.current.scrollIntoView({
+              behavior: "smooth"
             })}
             className={scss.left}>
             <img src={sealLogo} alt="Pennsylvania-Seal-Logo" />
@@ -104,10 +105,10 @@ const Header: React.FC<HeaderProps> = ({ HomeRef, PredictionsRef, FactsRef, Hist
 
           <div className={scss.center}>
             {navTags.map((e, index) => (
-              <div onClick={() =>
-                e?.ref.current.scrollIntoView({ behavior: "smooth" })
-              } className={scss.nav} key={index}>
-                <p>{e?.heading}</p>
+              <div className={scss.nav} key={index}>
+                <p onClick={() =>
+                  e?.ref.current.scrollIntoView({ behavior: "smooth" })
+                } className={scss.nav_heading}>{e?.heading}</p>
                 <p>{e?.line}</p>
               </div>
             ))}
@@ -124,7 +125,9 @@ const Header: React.FC<HeaderProps> = ({ HomeRef, PredictionsRef, FactsRef, Hist
           <>
             <div className={scss.heading}>
               <img src={sealLogo} alt="Pennsylvania-Seal-Logo" />
-              <div className={scss.title}>
+              <div onClick={() =>
+                HomeRef.current.scrollIntoView({ behavior: "smooth" })
+              } className={scss.title}>
                 <p>Pennsylvania</p>
                 <div className={scss.border}></div>
               </div>

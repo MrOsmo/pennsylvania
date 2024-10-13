@@ -29,6 +29,10 @@
       .description {
         margin-inline: 50px;
 
+        @media (max-width: "451px") {
+          margin-inline: 15px;
+        }
+
         p {
           text-align: center;
           color: rgb(255, 255, 255);
@@ -58,12 +62,17 @@
           width: 400px;
 
 
-          @media (max-width: "405px") {
-            width: 340px;
-          }
 
           @media (max-width: "476px") {
             width: 360px;
+          }
+
+          @media (max-width: "400px") {
+            width: 340px;
+          }
+
+          @media (max-width: "380px") {
+            width: 320px;
           }
 
 
@@ -91,8 +100,13 @@
             margin-top: 12px;
             color: rgb(227, 224, 224);
 
+
             @media (max-width: "476px") {
               font-size: 15px;
+            }
+
+            @media (max-width: "400px") {
+             text-align: center;
             }
           }
 

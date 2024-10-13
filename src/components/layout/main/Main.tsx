@@ -23,7 +23,7 @@ interface MainProps {
 const Main: React.FC<MainProps> = ({ HomeRef, PredictionsRef, FactsRef, HistoryRef, MaterialsRef, SpecialFeaturesRef, OtherProjectsRef, AboutUsRef }) => {
   return (
     <main className={scss.main}>
-      <Home HomeRef={HomeRef}/>
+      <Home HomeRef={HomeRef} PredictionsRef={PredictionsRef}/>
       <Prediction PredictionsRef={PredictionsRef} />
       <Fact FactsRef={FactsRef}/>
       <History HistoryRef={HistoryRef}/>

@@ -32,6 +32,10 @@
       .description {
         margin-inline: 50px;
 
+        @media (max-width: "451px") {
+          margin-inline: 0;
+        }
+
         p {
           text-align: center;
           color: rgb(255, 255, 255);

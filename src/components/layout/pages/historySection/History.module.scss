@@ -31,6 +31,10 @@
       .description {
         margin-inline: 50px;
 
+        @media (max-width: "451px") {
+          margin-inline: 0;
+        }
+
         p {
           text-align: center;
           color: rgb(255, 255, 255);
@@ -64,6 +68,10 @@
           padding-inline: 60px;
         }
 
+        @media (max-width: "451px") {
+          padding-inline: 0;
+        }
+
         .left {
           width: 100%;
           max-width: 50%;
@@ -77,6 +85,8 @@
             margin-top: 30px;
           }
 
+          
+
           p {
             text-align: start;
             line-height: 30px;
@@ -88,6 +98,7 @@
             @media (max-width: "1014px") {
               text-align: center;
             }
+            
           }
         }
 
@@ -123,6 +134,10 @@
 
         @media (max-width: "1330px") {
           padding-inline: 60px;
+        }
+
+        @media (max-width: "451px") {
+          padding-inline: 0;
         }
 
         .left {
@@ -191,6 +206,10 @@
 
           @media (max-width: "541px") {
             max-width: 300px;
+          }
+
+          @media (max-width: "429px") {
+            max-width: 200px;
           }
         }
 
