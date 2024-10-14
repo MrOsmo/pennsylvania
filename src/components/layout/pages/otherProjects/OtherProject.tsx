@@ -1,6 +1,7 @@
 import scss from "./OtherProject.module.scss"
-import testVideo from "../../../../assets/video/testVideo.mp4"
 import songVideo from "../../../../assets/projects/song.mp4"
+import podcastAudio from "../../../../assets/projects/podcast.mp3"
+import studioWallpaper from "../../../../assets/studio.jpg"
 import React, { RefObject } from "react"
 
 interface OtherProjectsProps {
@@ -8,6 +9,7 @@ interface OtherProjectsProps {
 }
 
 const OtherProject: React.FC<OtherProjectsProps> = ({ OtherProjectsRef }) => {
+  
   return (
     <section className={scss.other_projects}>
       <div className={scss.container}>
@@ -37,7 +39,7 @@ const OtherProject: React.FC<OtherProjectsProps> = ({ OtherProjectsRef }) => {
               <p className={scss.members}>© Pauline, Kadir, Johannes, Luna, Benjamin, Sofia, Jan, Lennox, Merle</p>
             </div>
 
-            <div className={scss.card}>
+            {/* <div className={scss.card}>
               <div className={scss.sides_two}>
                 <div className={scss.left}>
                   <div className={scss.head}>
@@ -48,12 +50,57 @@ const OtherProject: React.FC<OtherProjectsProps> = ({ OtherProjectsRef }) => {
                 </div>
 
                 <div className={scss.right}>
-                  <video src={testVideo} controls></video>
+                  <video src={pennsylvaniaVideo} controls></video>
                 </div>
               </div>
 
-              <p className={scss.members_two}>© Leni, Emilie, Leni, Ilka</p>
+              <p className={scss.members_two}>© Leni H., Emilie, Leni K., Ilka</p>
+            </div> */}
+
+            {/* <div className={scss.card}>
+              <div className={scss.sides}>
+                <div className={scss.left}>
+                  <div className={scss.head}>
+                    <h3>Group 3</h3>
+                    <h2>Pennsylvania: Video 🗣️</h2>
+                  </div>
+                  <p>Watch the video in a TikTok-style blog, offering quick insights and highlights about Pennsylvania. It is a fun way to learn about the latest events!</p>
+                </div>
+
+                <div className={scss.right}>
+                  <video src={pennsylvaniaVideoTwo} controls></video>
+                </div>
+              </div>
+
+              <p className={scss.members}>© Lana, Kaija, Marlene, Amy, Viola, Luna</p>
+            </div> */}
+
+            <div className={scss.card_audio}>
+              <div className={scss.sides_two}>
+                <div className={scss.left}>
+                  <div className={scss.head}>
+                    <h3>Group 4</h3>
+                    <h2>🎙️ Pennsylvania: Podcast</h2>
+                  </div>
+                  <p>Listen to the podcast about Pennsylvania, exploring various topics related to the state. It is a great way to stay informed and entertained with everything about Pennsylvania!</p>
+                </div>
+
+                <div className={scss.right}>
+                  <img src={studioWallpaper} alt="Studio-Wallpaper" />
+                  <audio src={podcastAudio} controls></audio>
+                </div>
+              </div>
+
+              <p className={scss.members_two}>© Jannis, Silas</p>
             </div>
+          </div>
+
+          <div className={scss.reference_div}>
+            <div className={scss.border}></div>
+            <p className={scss.references}>
+              References:
+              <a target="_blank" href="https://pixabay.com/de/photos/laptop-konferenztisch-maus-arbeit-7978588/">Studio (Picture)</a>
+            </p>
           </div>
         </div>
       </div>
