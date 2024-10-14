@@ -2,6 +2,7 @@ import scss from "./OtherProject.module.scss"
 import songVideo from "../../../../assets/projects/song.mp4"
 import podcastAudio from "../../../../assets/projects/podcast.mp3"
 import pennsylvaniaVideo from "../../../../assets/projects/pennsylvaniaVideo.mp4"
+import pennsylvaniaVideoTwo from "../../../../assets/projects/pennsylvaniaVideoTwo.mp4"
 import studioWallpaper from "../../../../assets/studio.jpg"
 import React, { RefObject } from "react"
 
@@ -58,7 +59,7 @@ const OtherProject: React.FC<OtherProjectsProps> = ({ OtherProjectsRef }) => {
               <p className={scss.members_two}>© Leni H., Emilie, Leni K., Ilka</p>
             </div>
 
-            {/* <div className={scss.card}>
+            <div className={scss.card}>
               <div className={scss.sides}>
                 <div className={scss.left}>
                   <div className={scss.head}>
@@ -74,7 +75,7 @@ const OtherProject: React.FC<OtherProjectsProps> = ({ OtherProjectsRef }) => {
               </div>
 
               <p className={scss.members}>© Lana, Kaija, Marlene, Amy, Viola, Luna</p>
-            </div> */}
+            </div>
 
             <div className={scss.card_audio}>
               <div className={scss.sides_two}>
