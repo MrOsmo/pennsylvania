@@ -123,11 +123,11 @@ const Header: React.FC<HeaderProps> = ({ HomeRef, PredictionsRef, FactsRef, Hist
 
         <div className={scss.mini_content}>
           <>
-            <div className={scss.heading}>
-              <img src={sealLogo} alt="Pennsylvania-Seal-Logo" />
-              <div onClick={() =>
+            <div onClick={() =>
                 HomeRef.current.scrollIntoView({ behavior: "smooth" })
-              } className={scss.title}>
+              } className={scss.heading}>
+              <img src={sealLogo} alt="Pennsylvania-Seal-Logo" />
+              <div className={scss.title}>
                 <p>Pennsylvania</p>
                 <div className={scss.border}></div>
               </div>
